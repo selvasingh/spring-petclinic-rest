@@ -1,4 +1,4 @@
-# REST version of Spring PetClinic Sample Application on Azure Spring Cloud(spring-framework-petclinic extend ) [![Build Status](https://travis-ci.org/spring-petclinic/spring-petclinic-rest.png?branch=master)](https://travis-ci.org/spring-petclinic/spring-petclinic-rest/)
+# REST version of Spring PetClinic Sample Application on Azure Spring Cloud
 
 This backend version of the Spring Petclinic application only provides a REST API. **There is no UI**.
 The [spring-petclinic-angular project](https://github.com/spring-petclinic/spring-petclinic-angular) is a Angular front-end application which consumes the REST API.
@@ -104,7 +104,7 @@ Set your default resource group name and cluster name using the following comman
 
 ### Create microservice applications
 
-Create 5 microservice apps.
+Create a microservice app.
 
 ```bash
     az spring-cloud app create --name spring-petclinic-rest --instance-count 1 --assign-endpoint true \
@@ -124,11 +124,18 @@ Deploy Spring Petclinic rest application to Azure.
 ```
 
 ## Swagger REST API documentation presented here (after application start):
-Copy the assinged url from the portal for the spring petclinic application deployed above. 
+Copy the assigned url from the portal for the spring petclinic application as shown below and append **/petclinic** to the URL.
 
-[http://<url>/petclinic/swagger-ui.html](http:<url>/petclinic/swagger-ui.html)
+![](copy-assigned-url.png)
+
+Your Swagger UI should show all the Rest endpoints in the project lke shown below.
+ 
+
+![](petclinic-rest-swagger.png) 
 
 ## Screenshot of the Angular client
+
+If you run the Angular client by building Spring Petclinic Angular project then you will see the end to end application running like shown below. 
 
 <img width="1427" alt="spring-petclinic-angular2" src="https://cloud.githubusercontent.com/assets/838318/23263243/f4509c4a-f9dd-11e6-951b-69d0ef72d8bd.png">
 
