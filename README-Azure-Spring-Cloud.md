@@ -15,9 +15,10 @@ The [spring-petclinic-angular project](https://github.com/spring-petclinic/sprin
 
 ### With maven command line
 ```
-git clone https://github.com/spring-petclinic/spring-petclinic-rest.git
+git clone https://github.com/selvasingh/spring-petclinic-rest.git
 cd spring-petclinic-rest
-./mvnw spring-boot:run
+git checkout Azure
+mvn clean package
 ```
 
 ### With Docker
